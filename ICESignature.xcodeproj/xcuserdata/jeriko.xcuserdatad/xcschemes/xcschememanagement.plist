@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SampleApp.xcscheme</key>
+		<key>ICESignature.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8ABAE7E61E52DF7500064801</key>
+		<key>75AAB7071E5D8EB400EF108D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8ABAE7FA1E52DF7500064801</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8ABAE8051E52DF7500064801</key>
+		<key>75AAB7101E5D8EB400EF108D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

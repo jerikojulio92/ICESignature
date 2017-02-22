@@ -1,15 +1,15 @@
 //
-//  ESignatureTests.swift
-//  ESignatureTests
+//  ICESignatureTests.swift
+//  ICESignatureTests
 //
-//  Created by Yoga Widyakrisna on 2/14/17.
-//  Copyright © 2017 Icehouse. All rights reserved.
+//  Created by Jeriko on 2/22/17.
+//  Copyright © 2017 Jeriko. All rights reserved.
 //
 
 import XCTest
-@testable import ESignature
+@testable import ICESignature
 
-class ESignatureTests: XCTestCase {
+class ICESignatureTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

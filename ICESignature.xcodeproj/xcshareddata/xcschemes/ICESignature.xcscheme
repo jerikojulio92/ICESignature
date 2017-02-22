@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8ABAE7E61E52DF7500064801"
-               BuildableName = "SampleApp.app"
-               BlueprintName = "SampleApp"
-               ReferencedContainer = "container:SampleApp.xcodeproj">
+               BlueprintIdentifier = "75AAB7071E5D8EB400EF108D"
+               BuildableName = "ICESignature.framework"
+               BlueprintName = "ICESignature"
+               ReferencedContainer = "container:ICESignature.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8ABAE7FA1E52DF7500064801"
-               BuildableName = "SampleAppTests.xctest"
-               BlueprintName = "SampleAppTests"
-               ReferencedContainer = "container:SampleApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8ABAE8051E52DF7500064801"
-               BuildableName = "SampleAppUITests.xctest"
-               BlueprintName = "SampleAppUITests"
-               ReferencedContainer = "container:SampleApp.xcodeproj">
+               BlueprintIdentifier = "75AAB7101E5D8EB400EF108D"
+               BuildableName = "ICESignatureTests.xctest"
+               BlueprintName = "ICESignatureTests"
+               ReferencedContainer = "container:ICESignature.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8ABAE7E61E52DF7500064801"
-            BuildableName = "SampleApp.app"
-            BlueprintName = "SampleApp"
-            ReferencedContainer = "container:SampleApp.xcodeproj">
+            BlueprintIdentifier = "75AAB7071E5D8EB400EF108D"
+            BuildableName = "ICESignature.framework"
+            BlueprintName = "ICESignature"
+            ReferencedContainer = "container:ICESignature.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -71,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8ABAE7E61E52DF7500064801"
-            BuildableName = "SampleApp.app"
-            BlueprintName = "SampleApp"
-            ReferencedContainer = "container:SampleApp.xcodeproj">
+            BlueprintIdentifier = "75AAB7071E5D8EB400EF108D"
+            BuildableName = "ICESignature.framework"
+            BlueprintName = "ICESignature"
+            ReferencedContainer = "container:ICESignature.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8ABAE7E61E52DF7500064801"
-            BuildableName = "SampleApp.app"
-            BlueprintName = "SampleApp"
-            ReferencedContainer = "container:SampleApp.xcodeproj">
+            BlueprintIdentifier = "75AAB7071E5D8EB400EF108D"
+            BuildableName = "ICESignature.framework"
+            BlueprintName = "ICESignature"
+            ReferencedContainer = "container:ICESignature.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

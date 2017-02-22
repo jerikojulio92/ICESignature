@@ -7,184 +7,191 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8ABAE7AA1E52DF1200064801 /* ESignature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABAE7A01E52DF1200064801 /* ESignature.framework */; };
-		8ABAE7AF1E52DF1200064801 /* ESignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAE7AE1E52DF1200064801 /* ESignatureTests.swift */; };
-		8ABAE7B11E52DF1200064801 /* ESignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ABAE7A31E52DF1200064801 /* ESignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75AAB7121E5D8EB400EF108D /* ICESignature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AAB7081E5D8EB400EF108D /* ICESignature.framework */; };
+		75AAB7171E5D8EB500EF108D /* ICESignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAB7161E5D8EB500EF108D /* ICESignatureTests.swift */; };
+		75AAB7191E5D8EB500EF108D /* ICESignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AAB70B1E5D8EB400EF108D /* ICESignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75AAB7601E5D8F8300EF108D /* ICESignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAB75F1E5D8F8300EF108D /* ICESignature.swift */; };
+		75AAB7681E5D970900EF108D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAB7671E5D970900EF108D /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8ABAE7AB1E52DF1200064801 /* PBXContainerItemProxy */ = {
+		75AAB7131E5D8EB400EF108D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8ABAE7971E52DF1200064801 /* Project object */;
+			containerPortal = 75AAB6FF1E5D8EB400EF108D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8ABAE79F1E52DF1200064801;
-			remoteInfo = ESignature;
+			remoteGlobalIDString = 75AAB7071E5D8EB400EF108D;
+			remoteInfo = ICESignature;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8ABAE7A01E52DF1200064801 /* ESignature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESignature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ABAE7A31E52DF1200064801 /* ESignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESignature.h; sourceTree = "<group>"; };
-		8ABAE7A41E52DF1200064801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8ABAE7A91E52DF1200064801 /* ESignatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESignatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ABAE7AE1E52DF1200064801 /* ESignatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESignatureTests.swift; sourceTree = "<group>"; };
-		8ABAE7B01E52DF1200064801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75AAB7081E5D8EB400EF108D /* ICESignature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ICESignature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AAB70B1E5D8EB400EF108D /* ICESignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICESignature.h; sourceTree = "<group>"; };
+		75AAB70C1E5D8EB400EF108D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75AAB7111E5D8EB400EF108D /* ICESignatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICESignatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AAB7161E5D8EB500EF108D /* ICESignatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICESignatureTests.swift; sourceTree = "<group>"; };
+		75AAB7181E5D8EB500EF108D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75AAB75F1E5D8F8300EF108D /* ICESignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICESignature.swift; sourceTree = "<group>"; };
+		75AAB7671E5D970900EF108D /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8ABAE79C1E52DF1200064801 /* Frameworks */ = {
+		75AAB7041E5D8EB400EF108D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8ABAE7A61E52DF1200064801 /* Frameworks */ = {
+		75AAB70E1E5D8EB400EF108D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABAE7AA1E52DF1200064801 /* ESignature.framework in Frameworks */,
+				75AAB7121E5D8EB400EF108D /* ICESignature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8ABAE7961E52DF1200064801 = {
+		75AAB6FE1E5D8EB400EF108D = {
 			isa = PBXGroup;
 			children = (
-				8ABAE7A21E52DF1200064801 /* ESignature */,
-				8ABAE7AD1E52DF1200064801 /* ESignatureTests */,
-				8ABAE7A11E52DF1200064801 /* Products */,
+				75AAB70A1E5D8EB400EF108D /* ICESignature */,
+				75AAB7151E5D8EB500EF108D /* ICESignatureTests */,
+				75AAB7091E5D8EB400EF108D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8ABAE7A11E52DF1200064801 /* Products */ = {
+		75AAB7091E5D8EB400EF108D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8ABAE7A01E52DF1200064801 /* ESignature.framework */,
-				8ABAE7A91E52DF1200064801 /* ESignatureTests.xctest */,
+				75AAB7081E5D8EB400EF108D /* ICESignature.framework */,
+				75AAB7111E5D8EB400EF108D /* ICESignatureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8ABAE7A21E52DF1200064801 /* ESignature */ = {
+		75AAB70A1E5D8EB400EF108D /* ICESignature */ = {
 			isa = PBXGroup;
 			children = (
-				8ABAE7A31E52DF1200064801 /* ESignature.h */,
-				8ABAE7A41E52DF1200064801 /* Info.plist */,
+				75AAB70B1E5D8EB400EF108D /* ICESignature.h */,
+				75AAB75F1E5D8F8300EF108D /* ICESignature.swift */,
+				75AAB7671E5D970900EF108D /* Line.swift */,
+				75AAB70C1E5D8EB400EF108D /* Info.plist */,
 			);
-			path = ESignature;
+			path = ICESignature;
 			sourceTree = "<group>";
 		};
-		8ABAE7AD1E52DF1200064801 /* ESignatureTests */ = {
+		75AAB7151E5D8EB500EF108D /* ICESignatureTests */ = {
 			isa = PBXGroup;
 			children = (
-				8ABAE7AE1E52DF1200064801 /* ESignatureTests.swift */,
-				8ABAE7B01E52DF1200064801 /* Info.plist */,
+				75AAB7161E5D8EB500EF108D /* ICESignatureTests.swift */,
+				75AAB7181E5D8EB500EF108D /* Info.plist */,
 			);
-			path = ESignatureTests;
+			path = ICESignatureTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8ABAE79D1E52DF1200064801 /* Headers */ = {
+		75AAB7051E5D8EB400EF108D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABAE7B11E52DF1200064801 /* ESignature.h in Headers */,
+				75AAB7191E5D8EB500EF108D /* ICESignature.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8ABAE79F1E52DF1200064801 /* ESignature */ = {
+		75AAB7071E5D8EB400EF108D /* ICESignature */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ABAE7B41E52DF1200064801 /* Build configuration list for PBXNativeTarget "ESignature" */;
+			buildConfigurationList = 75AAB71C1E5D8EB500EF108D /* Build configuration list for PBXNativeTarget "ICESignature" */;
 			buildPhases = (
-				8ABAE79B1E52DF1200064801 /* Sources */,
-				8ABAE79C1E52DF1200064801 /* Frameworks */,
-				8ABAE79D1E52DF1200064801 /* Headers */,
-				8ABAE79E1E52DF1200064801 /* Resources */,
+				75AAB7031E5D8EB400EF108D /* Sources */,
+				75AAB7041E5D8EB400EF108D /* Frameworks */,
+				75AAB7051E5D8EB400EF108D /* Headers */,
+				75AAB7061E5D8EB400EF108D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ESignature;
-			productName = ESignature;
-			productReference = 8ABAE7A01E52DF1200064801 /* ESignature.framework */;
+			name = ICESignature;
+			productName = ICESignature;
+			productReference = 75AAB7081E5D8EB400EF108D /* ICESignature.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8ABAE7A81E52DF1200064801 /* ESignatureTests */ = {
+		75AAB7101E5D8EB400EF108D /* ICESignatureTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ABAE7B71E52DF1200064801 /* Build configuration list for PBXNativeTarget "ESignatureTests" */;
+			buildConfigurationList = 75AAB71F1E5D8EB500EF108D /* Build configuration list for PBXNativeTarget "ICESignatureTests" */;
 			buildPhases = (
-				8ABAE7A51E52DF1200064801 /* Sources */,
-				8ABAE7A61E52DF1200064801 /* Frameworks */,
-				8ABAE7A71E52DF1200064801 /* Resources */,
+				75AAB70D1E5D8EB400EF108D /* Sources */,
+				75AAB70E1E5D8EB400EF108D /* Frameworks */,
+				75AAB70F1E5D8EB400EF108D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8ABAE7AC1E52DF1200064801 /* PBXTargetDependency */,
+				75AAB7141E5D8EB400EF108D /* PBXTargetDependency */,
 			);
-			name = ESignatureTests;
-			productName = ESignatureTests;
-			productReference = 8ABAE7A91E52DF1200064801 /* ESignatureTests.xctest */;
+			name = ICESignatureTests;
+			productName = ICESignatureTests;
+			productReference = 75AAB7111E5D8EB400EF108D /* ICESignatureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8ABAE7971E52DF1200064801 /* Project object */ = {
+		75AAB6FF1E5D8EB400EF108D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = Icehouse;
+				ORGANIZATIONNAME = Jeriko;
 				TargetAttributes = {
-					8ABAE79F1E52DF1200064801 = {
+					75AAB7071E5D8EB400EF108D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 32UUN9FC3M;
+						DevelopmentTeam = FTB6C293B6;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
-					8ABAE7A81E52DF1200064801 = {
+					75AAB7101E5D8EB400EF108D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 32UUN9FC3M;
+						DevelopmentTeam = FTB6C293B6;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8ABAE79A1E52DF1200064801 /* Build configuration list for PBXProject "ESignature" */;
+			buildConfigurationList = 75AAB7021E5D8EB400EF108D /* Build configuration list for PBXProject "ICESignature" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8ABAE7961E52DF1200064801;
-			productRefGroup = 8ABAE7A11E52DF1200064801 /* Products */;
+			mainGroup = 75AAB6FE1E5D8EB400EF108D;
+			productRefGroup = 75AAB7091E5D8EB400EF108D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8ABAE79F1E52DF1200064801 /* ESignature */,
-				8ABAE7A81E52DF1200064801 /* ESignatureTests */,
+				75AAB7071E5D8EB400EF108D /* ICESignature */,
+				75AAB7101E5D8EB400EF108D /* ICESignatureTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8ABAE79E1E52DF1200064801 /* Resources */ = {
+		75AAB7061E5D8EB400EF108D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8ABAE7A71E52DF1200064801 /* Resources */ = {
+		75AAB70F1E5D8EB400EF108D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,33 +201,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8ABAE79B1E52DF1200064801 /* Sources */ = {
+		75AAB7031E5D8EB400EF108D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AAB7601E5D8F8300EF108D /* ICESignature.swift in Sources */,
+				75AAB7681E5D970900EF108D /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8ABAE7A51E52DF1200064801 /* Sources */ = {
+		75AAB70D1E5D8EB400EF108D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABAE7AF1E52DF1200064801 /* ESignatureTests.swift in Sources */,
+				75AAB7171E5D8EB500EF108D /* ICESignatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8ABAE7AC1E52DF1200064801 /* PBXTargetDependency */ = {
+		75AAB7141E5D8EB400EF108D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8ABAE79F1E52DF1200064801 /* ESignature */;
-			targetProxy = 8ABAE7AB1E52DF1200064801 /* PBXContainerItemProxy */;
+			target = 75AAB7071E5D8EB400EF108D /* ICESignature */;
+			targetProxy = 75AAB7131E5D8EB400EF108D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8ABAE7B21E52DF1200064801 /* Debug */ = {
+		75AAB71A1E5D8EB500EF108D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -273,7 +282,7 @@
 			};
 			name = Debug;
 		};
-		8ABAE7B31E52DF1200064801 /* Release */ = {
+		75AAB71B1E5D8EB500EF108D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -319,63 +328,68 @@
 			};
 			name = Release;
 		};
-		8ABAE7B51E52DF1200064801 /* Debug */ = {
+		75AAB71D1E5D8EB500EF108D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32UUN9FC3M;
+				DEVELOPMENT_TEAM = FTB6C293B6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ESignature/Info.plist;
+				INFOPLIST_FILE = ICESignature/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.icehouse.ESignature;
+				PRODUCT_BUNDLE_IDENTIFIER = Julio.ICESignature;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		8ABAE7B61E52DF1200064801 /* Release */ = {
+		75AAB71E1E5D8EB500EF108D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32UUN9FC3M;
+				DEVELOPMENT_TEAM = FTB6C293B6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ESignature/Info.plist;
+				INFOPLIST_FILE = ICESignature/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.icehouse.ESignature;
+				PRODUCT_BUNDLE_IDENTIFIER = Julio.ICESignature;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		8ABAE7B81E52DF1200064801 /* Debug */ = {
+		75AAB7201E5D8EB500EF108D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 32UUN9FC3M;
-				INFOPLIST_FILE = ESignatureTests/Info.plist;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FTB6C293B6;
+				INFOPLIST_FILE = ICESignatureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.icehouse.ESignatureTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Julio.ICESignatureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		8ABAE7B91E52DF1200064801 /* Release */ = {
+		75AAB7211E5D8EB500EF108D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 32UUN9FC3M;
-				INFOPLIST_FILE = ESignatureTests/Info.plist;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FTB6C293B6;
+				INFOPLIST_FILE = ICESignatureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.icehouse.ESignatureTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Julio.ICESignatureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -384,32 +398,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8ABAE79A1E52DF1200064801 /* Build configuration list for PBXProject "ESignature" */ = {
+		75AAB7021E5D8EB400EF108D /* Build configuration list for PBXProject "ICESignature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8ABAE7B21E52DF1200064801 /* Debug */,
-				8ABAE7B31E52DF1200064801 /* Release */,
+				75AAB71A1E5D8EB500EF108D /* Debug */,
+				75AAB71B1E5D8EB500EF108D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8ABAE7B41E52DF1200064801 /* Build configuration list for PBXNativeTarget "ESignature" */ = {
+		75AAB71C1E5D8EB500EF108D /* Build configuration list for PBXNativeTarget "ICESignature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8ABAE7B51E52DF1200064801 /* Debug */,
-				8ABAE7B61E52DF1200064801 /* Release */,
+				75AAB71D1E5D8EB500EF108D /* Debug */,
+				75AAB71E1E5D8EB500EF108D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		8ABAE7B71E52DF1200064801 /* Build configuration list for PBXNativeTarget "ESignatureTests" */ = {
+		75AAB71F1E5D8EB500EF108D /* Build configuration list for PBXNativeTarget "ICESignatureTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8ABAE7B81E52DF1200064801 /* Debug */,
-				8ABAE7B91E52DF1200064801 /* Release */,
+				75AAB7201E5D8EB500EF108D /* Debug */,
+				75AAB7211E5D8EB500EF108D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8ABAE7971E52DF1200064801 /* Project object */;
+	rootObject = 75AAB6FF1E5D8EB400EF108D /* Project object */;
 }

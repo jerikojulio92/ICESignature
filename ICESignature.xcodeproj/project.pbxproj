@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		756BD47E1E5E7142000E1FAF /* LineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BD47D1E5E7142000E1FAF /* LineColor.swift */; };
 		75AAB7121E5D8EB400EF108D /* ICESignature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AAB7081E5D8EB400EF108D /* ICESignature.framework */; };
 		75AAB7171E5D8EB500EF108D /* ICESignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAB7161E5D8EB500EF108D /* ICESignatureTests.swift */; };
 		75AAB7191E5D8EB500EF108D /* ICESignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AAB70B1E5D8EB400EF108D /* ICESignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		756BD47D1E5E7142000E1FAF /* LineColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineColor.swift; sourceTree = "<group>"; };
 		75AAB7081E5D8EB400EF108D /* ICESignature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ICESignature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AAB70B1E5D8EB400EF108D /* ICESignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICESignature.h; sourceTree = "<group>"; };
 		75AAB70C1E5D8EB400EF108D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				75AAB70B1E5D8EB400EF108D /* ICESignature.h */,
 				75AAB75F1E5D8F8300EF108D /* ICESignature.swift */,
 				75AAB7671E5D970900EF108D /* Line.swift */,
+				756BD47D1E5E7142000E1FAF /* LineColor.swift */,
 				75AAB70C1E5D8EB400EF108D /* Info.plist */,
 			);
 			path = ICESignature;
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756BD47E1E5E7142000E1FAF /* LineColor.swift in Sources */,
 				75AAB7601E5D8F8300EF108D /* ICESignature.swift in Sources */,
 				75AAB7681E5D970900EF108D /* Line.swift in Sources */,
 			);

@@ -7,19 +7,23 @@
 //
 
 import UIKit
-import Foundation
 
 public class ICESignature: UIView {
     
-    private var lines: [Line]=[]
-    private var lastPoint: CGPoint!
+    public var maximumWidth: CGFloat = 2.5
+    public var minimumWidth: CGFloat = 0.25
+    public var lineColor = CMYKColor()
     
+    private var lines: [Line]=[]
+    private var isEditing = true
+    private var lastPoint: CGPoint!
     private var previousPoint1: CGPoint!
     private var previousPoint2: CGPoint!
     private var currentPoint: CGPoint!
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.backgroundColor = UIColor.clear
     }
     
     required public override init(frame: CGRect) {
@@ -27,28 +31,32 @@ public class ICESignature: UIView {
     }
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let tempTouch = touches.first?.location(in: self) {
-            lastPoint = tempTouch
-            previousPoint1 = tempTouch
-            previousPoint2 = tempTouch
+        if isEditing {
+            if let tempTouch = touches.first?.location(in: self) {
+                lastPoint = tempTouch
+                previousPoint1 = tempTouch
+                previousPoint2 = tempTouch
+            }
+            self.setNeedsDisplay()
         }
-        self.setNeedsDisplay()
     }
     
     override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        var newPoint = CGPoint()
-        if let tempTouch = touches.first?.location(in: self) {
-            previousPoint2 = previousPoint1
-            previousPoint1 = lastPoint
-            currentPoint = tempTouch
+        if isEditing {
+            var newPoint = CGPoint()
+            if let tempTouch = touches.first?.location(in: self) {
+                previousPoint2 = previousPoint1
+                previousPoint1 = lastPoint
+                currentPoint = tempTouch
+                
+                newPoint = tempTouch
+            }
             
-            newPoint = tempTouch
+            lines.append(Line(start: lastPoint, end: newPoint, previousPoint1: previousPoint1, previousPoint2: previousPoint2, currentPoint: currentPoint))
+            lastPoint = newPoint
+            
+            self.setNeedsDisplay()
         }
-        
-        lines.append(Line(start: lastPoint, end: newPoint, previousPoint1: previousPoint1, previousPoint2: previousPoint2, currentPoint: currentPoint))
-        lastPoint = newPoint
-        
-        self.setNeedsDisplay()
     }
     
     override public func draw(_ rect: CGRect) {
@@ -78,21 +86,29 @@ public class ICESignature: UIView {
                 currentWidth = previousWidth1 * 1.2
             }
             
-            if (currentWidth > 2.5) {
-                currentWidth = 2.5
+            if (currentWidth > maximumWidth) {
+                currentWidth = maximumWidth
             }
             
-            if (currentWidth < 0.15) {
-                currentWidth = 0.15
+            if (currentWidth < minimumWidth) {
+                currentWidth = minimumWidth
             }
             
             context?.setLineWidth(currentWidth)
-            context?.setStrokeColor(cyan: 1, magenta: 1, yellow: 1, black: 1, alpha: 1)
+            context?.setStrokeColor(cyan: lineColor.cyan, magenta: lineColor.magenta, yellow: lineColor.yellow, black: lineColor.black, alpha: lineColor.alpha)
             context?.strokePath()
             
             previousWidth2 = previousWidth1
             previousWidth1 = currentWidth
         }
+    }
+    
+    public func beginEditingSignature(){
+        isEditing = true
+    }
+    
+    public func stopEditingSignature(){
+        isEditing = false
     }
     
     func calculateMidPoint(point1: CGPoint, point2: CGPoint) -> CGPoint {

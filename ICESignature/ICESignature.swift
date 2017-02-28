@@ -13,6 +13,7 @@ public class ICESignature: UIView {
     public var maximumWidth: CGFloat = 2.5
     public var minimumWidth: CGFloat = 0.25
     public var lineColor = CMYKColor()
+    public var controlConstant:CGFloat = 2.5
     
     private var lines: [Line]=[]
     private var isEditing = true
@@ -77,13 +78,13 @@ public class ICESignature: UIView {
             context?.setLineCap(.round)
             context?.setBlendMode(.normal)
             
-            let ySpeed = abs(line.end.y - line.start.y)
-            let xSpeed = abs(line.end.x - line.start.x)
+            let ySpeed = calculateSpeed(endPoint: line.end.y , startPoint: line.start.y)
+            let xSpeed = calculateSpeed(endPoint: line.end.x , startPoint: line.start.x)
             
-            currentWidth = 2.5 / min(ySpeed, xSpeed)
+            currentWidth = controlConstant / min(ySpeed, xSpeed)
             
             if (currentWidth - previousWidth1) > (previousWidth1 - previousWidth2) {
-                currentWidth = previousWidth1 * 1.2
+                currentWidth = previousWidth1 * 1.15
             }
             
             if (currentWidth > maximumWidth) {
@@ -109,6 +110,11 @@ public class ICESignature: UIView {
     
     public func stopEditingSignature(){
         isEditing = false
+    }
+    
+    func calculateSpeed(endPoint: CGFloat, startPoint: CGFloat) -> CGFloat {
+         return abs(endPoint - startPoint)
+
     }
     
     func calculateMidPoint(point1: CGPoint, point2: CGPoint) -> CGPoint {

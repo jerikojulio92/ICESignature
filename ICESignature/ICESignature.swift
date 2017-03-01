@@ -10,13 +10,15 @@ import UIKit
 
 public class ICESignature: UIView {
     
-    public var maximumWidth: CGFloat = 2.5
-    public var minimumWidth: CGFloat = 0.25
     public var lineColor = CMYKColor()
-    public var controlConstant:CGFloat = 2.5
+    
+    private var widthDifferenceMultiplier: CGFloat = 1.07
+    private var maximumWidth: CGFloat = 2.5
+    private var minimumWidth: CGFloat = 0.25
+    private var controlConstant:CGFloat = 2.5
+    private var isEditing = true
     
     private var lines: [Line]=[]
-    private var isEditing = true
     private var lastPoint: CGPoint!
     private var previousPoint1: CGPoint!
     private var previousPoint2: CGPoint!
@@ -84,7 +86,7 @@ public class ICESignature: UIView {
             currentWidth = controlConstant / min(ySpeed, xSpeed)
             
             if (currentWidth - previousWidth1) > (previousWidth1 - previousWidth2) {
-                currentWidth = previousWidth1 * 1.15
+                currentWidth = previousWidth1 * widthDifferenceMultiplier
             }
             
             if (currentWidth > maximumWidth) {
@@ -104,6 +106,20 @@ public class ICESignature: UIView {
         }
     }
     
+    private func calculateSpeed(endPoint: CGFloat, startPoint: CGFloat) -> CGFloat {
+        return abs(endPoint - startPoint)
+        
+    }
+    
+    private func calculateMidPoint(point1: CGPoint, point2: CGPoint) -> CGPoint {
+        return CGPoint(x: (point1.x + point2.x) * 0.5, y: (point1.y + point2.y) * 0.5)
+    }
+    
+    public func clearLines(){
+        lines.removeAll()
+        self.setNeedsDisplay()
+    }
+    
     public func beginEditingSignature(){
         isEditing = true
     }
@@ -112,17 +128,27 @@ public class ICESignature: UIView {
         isEditing = false
     }
     
-    func calculateSpeed(endPoint: CGFloat, startPoint: CGFloat) -> CGFloat {
-         return abs(endPoint - startPoint)
-
+    public func setMinimumWidth(width: CGFloat){
+        var newWidth = CGFloat()
+        if (width < 0 ) {newWidth = .leastNonzeroMagnitude}
+        minimumWidth = newWidth
     }
     
-    func calculateMidPoint(point1: CGPoint, point2: CGPoint) -> CGPoint {
-        return CGPoint(x: (point1.x + point2.x) * 0.5, y: (point1.y + point2.y) * 0.5)
+    public func setMaximumWidth(width: CGFloat){
+        var newWidth = CGFloat()
+        if (width < 0 ) {newWidth = .leastNonzeroMagnitude}
+        maximumWidth = newWidth
     }
     
-    public func clearLines(){
-        lines.removeAll()
-        self.setNeedsDisplay()
+    public func setControlConstant(constant: CGFloat){
+        var newConstant = CGFloat()
+        if (constant < 0 ) {newConstant = .leastNonzeroMagnitude}
+        controlConstant = newConstant
+    }
+    
+    public func setWidthDifferenceMultiplier(multiplier: CGFloat){
+        var newMultiplier = CGFloat()
+        if (multiplier < 0 ) {newMultiplier = .leastNonzeroMagnitude}
+        widthDifferenceMultiplier = newMultiplier
     }
 }

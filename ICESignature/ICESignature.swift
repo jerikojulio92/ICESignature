@@ -10,13 +10,60 @@ import UIKit
 
 public class ICESignature: UIView {
     
-    public var lineColor = CMYKColor()
+    private var _lineColor = CMYKColor()
+    public var lineColor: CMYKColor{
+        return _lineColor
+    }
     
-    private var widthDifferenceMultiplier: CGFloat = 1.07
-    private var maximumWidth: CGFloat = 2.5
-    private var minimumWidth: CGFloat = 0.25
-    private var controlConstant:CGFloat = 2.5
-    private var isEditing = true
+    private var _widthDifferenceMultiplier: CGFloat = 1.07
+    public var widthDifferenceMultiplier: CGFloat {
+        get{
+            return _widthDifferenceMultiplier
+        }
+        set(newValue){
+            _widthDifferenceMultiplier = setValue(value: newValue)
+        }
+    }
+    
+    private var _maximumWidth: CGFloat = 2.5
+    public var maximumWidth: CGFloat {
+        get{
+            return _maximumWidth
+        }
+        set(newValue){
+            _maximumWidth = setValue(value: newValue)
+        }
+    }
+    
+    private var _minimumWidth: CGFloat = 0.25
+    public var minimumWidth: CGFloat {
+        get{
+            return _minimumWidth
+        }
+        set(newValue){
+            _minimumWidth = setValue(value: newValue)
+        }
+    }
+    
+    private var _controlConstant:CGFloat = 2.5
+    public var controlConstant: CGFloat {
+        get{
+            return _controlConstant
+        }
+        set(newValue){
+            _controlConstant = setValue(value: newValue)
+        }
+    }
+    
+    private var _isEditing = true
+    public var isEditing: Bool {
+        get{
+            return _isEditing
+        }
+        set(newValue){
+            _isEditing = newValue
+        }
+    }
     
     private var lines: [Line]=[]
     private var lastPoint: CGPoint!
@@ -128,27 +175,9 @@ public class ICESignature: UIView {
         isEditing = false
     }
     
-    public func setMinimumWidth(width: CGFloat){
-        var newWidth = CGFloat()
-        if (width < 0 ) {newWidth = .leastNonzeroMagnitude}
-        minimumWidth = newWidth
-    }
-    
-    public func setMaximumWidth(width: CGFloat){
-        var newWidth = CGFloat()
-        if (width < 0 ) {newWidth = .leastNonzeroMagnitude}
-        maximumWidth = newWidth
-    }
-    
-    public func setControlConstant(constant: CGFloat){
-        var newConstant = CGFloat()
-        if (constant < 0 ) {newConstant = .leastNonzeroMagnitude}
-        controlConstant = newConstant
-    }
-    
-    public func setWidthDifferenceMultiplier(multiplier: CGFloat){
-        var newMultiplier = CGFloat()
-        if (multiplier < 0 ) {newMultiplier = .leastNonzeroMagnitude}
-        widthDifferenceMultiplier = newMultiplier
+    private func setValue(value: CGFloat)-> CGFloat {
+        var newValue = value
+        if (value < 0 ) {newValue = .leastNonzeroMagnitude}
+        return newValue
     }
 }

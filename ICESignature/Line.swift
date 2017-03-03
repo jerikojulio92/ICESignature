@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Line {
+internal class Line {
     var start: CGPoint
     var end: CGPoint
     var previousPoint1: CGPoint

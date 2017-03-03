@@ -155,7 +155,6 @@ public class ICESignature: UIView {
     
     private func calculateSpeed(endPoint: CGFloat, startPoint: CGFloat) -> CGFloat {
         return abs(endPoint - startPoint)
-        
     }
     
     private func calculateMidPoint(point1: CGPoint, point2: CGPoint) -> CGPoint {
